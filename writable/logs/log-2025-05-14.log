@@ -11,3 +11,21 @@ ERROR - 2025-05-14 03:10:24 --> API request failed: CodeIgniter\HTTP\Message::se
 ERROR - 2025-05-14 03:15:28 --> API request failed: 6 : Could not resolve host: sandbox.winpay.id
 ERROR - 2025-05-14 03:17:35 --> API request failed: 6 : Could not resolve host: sandbox.winpay.id
 ERROR - 2025-05-14 03:20:58 --> API request failed: 6 : Could not resolve host: sandbox-api.bmstaging
+INFO - 2025-05-14 07:20:01 --> Winpay Request Payload: {"amount":10000,"customer_name":"Abdul Aziz Firdaus","customer_email":"abdulfirdaus590@gmail.com","customer_phone":"081234567890","order_id":"INV-1747207201","channel_id":"QRIS"}
+INFO - 2025-05-14 07:20:03 --> Winpay API Response <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.20.2</center>
+</body>
+</html>
+
+INFO - 2025-05-14 07:23:56 --> Winpay Request Payload: {"amount":10000,"customer_name":"Abdul Aziz Firdaus","customer_email":"abdulfirdaus590@gmail.com","customer_phone":"081234567890","order_id":"INV-1747207436","channel_id":"QRIS"}
+INFO - 2025-05-14 07:23:57 --> Winpay API Response <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.20.2</center>
+</body>
+</html>
+

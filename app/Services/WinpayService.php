@@ -10,6 +10,7 @@ class WinpayService
   private $privateKeyPath;
   private $apiUrl;
   private $channelId;
+  private $endpoint = '/v1.0/qr/qr-mpm-generate';
 
   public function __construct()
   {
@@ -27,7 +28,7 @@ class WinpayService
   public function generateSignature($timestamp, $payload)
   {
     $httpMethod = 'POST';
-    $endpointUrl = '/v1.0/qr/qr-mpm-generate';
+    $endpointUrl = $this->endpoint;
     $minifiedPayload = json_encode($payload, JSON_UNESCAPED_SLASHES);
     $hashedBody = strtolower(bin2hex((hash('sha256', $minifiedPayload))));
     $stringToSign = implode(':', [$httpMethod, $endpointUrl, $hashedBody, $timestamp]);
@@ -60,6 +61,9 @@ class WinpayService
         'headers' => $headers,
         'json' => $payload,
       ]);
+
+      // debugging
+      log_message('info', 'Winpay API Response ' . $response->getBody());
       return $response->getBody();
     } catch (\Throwable $th) {
       throw new \Exception("API request failed: " . $th->getMessage());
