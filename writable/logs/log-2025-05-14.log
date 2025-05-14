@@ -6,3 +6,6 @@ ERROR - 2025-05-14 01:02:12 --> file_get_contents(app/Keys/private-key.pem): Fai
 ERROR - 2025-05-14 01:04:57 --> file_get_contents(app/Keys/private-key.pem): Failed to open stream: No such file or directory
 ERROR - 2025-05-14 01:11:46 --> file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\app/Keys/private-key.pem): Failed to open stream: No such file or directory
 ERROR - 2025-05-14 01:13:10 --> failed to load private key
+ERROR - 2025-05-14 03:09:59 --> file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\app/Keys/private-key.pem): Failed to open stream: No such file or directory
+ERROR - 2025-05-14 03:10:24 --> API request failed: CodeIgniter\HTTP\Message::setHeader(): Argument #1 ($name) must be of type string, int given, called in C:\xampp\htdocs\Test Payment Gateway\payment-gateway\vendor\codeigniter4\framework\system\HTTP\CURLRequest.php on line 301
+ERROR - 2025-05-14 03:15:28 --> API request failed: 6 : Could not resolve host: sandbox.winpay.id

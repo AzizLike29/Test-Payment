@@ -46,19 +46,19 @@ class WinpayService
   public function sendRequest($payload, $timestamp, $externalId, $signature)
   {
     $headers = [
-      "X-TIMESTAMP: $timestamp",
-      "X-SIGNATURE: $signature",
-      "X-PARTNER-ID: {$this->partnerId}",
-      "X-EXTERNAL-ID: $externalId",
-      "CHANNEL-ID: {$this->channelId}",
-      "Content-Type: application/json",
+      'X-TIMESTAMP' => $timestamp,
+      'X-SIGNATURE' => $signature,
+      'X-PARTNER-ID' => $this->partnerId,
+      'X-EXTERNAL-ID' => $externalId,
+      'CHANNEL-ID' => $this->channelId,
+      'Content-Type' => 'application/json',
     ];
 
     $client = \Config\Services::curlrequest();
     try {
       $response = $client->post($this->apiUrl, [
         'headers' => $headers,
-        'json' => $payload
+        'json' => $payload,
       ]);
       return $response->getBody();
     } catch (\Throwable $th) {
