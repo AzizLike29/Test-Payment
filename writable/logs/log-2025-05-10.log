@@ -1,0 +1,198 @@
+ERROR - 2025-05-10 09:34:53 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:34:53 --> ErrorException: Undefined variable $va_number
+[Method: GET, Route: payment/payment_result]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $va_number', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:48:06 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:48:06 --> ErrorException: Undefined variable $vaNumber
+[Method: GET, Route: payment/payment_result]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vaNumber', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:50:12 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:50:12 --> ErrorException: Undefined variable $vaNumber
+[Method: GET, Route: payment/payment_result]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vaNumber', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:50:16 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:50:16 --> ErrorException: Undefined variable $vaNumber
+[Method: GET, Route: payment/payment_result]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vaNumber', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:50:21 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:50:21 --> ErrorException: Undefined variable $vaNumber
+[Method: GET, Route: payment/payment_result]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vaNumber', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:51:35 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:51:35 --> ErrorException: Undefined variable $vaNumber
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vaNumber', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:51:54 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:51:54 --> ErrorException: Undefined variable $va_number
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $va_number', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:53:13 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:53:13 --> ErrorException: Undefined variable $va_number
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $va_number', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 09:54:54 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 09:54:54 --> ErrorException: Undefined variable $amount
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 9.
+ 1 APPPATH\Views\pages\payment_result.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $amount', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 10:07:24 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 10:07:24 --> ErrorException: Undefined variable $va_number
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $va_number', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 10:11:00 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 10:11:00 --> ErrorException: Undefined variable $va_number
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 8.
+ 1 APPPATH\Views\pages\payment_result.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $va_number', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 10:11:46 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+ERROR - 2025-05-10 10:16:12 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+ERROR - 2025-05-10 10:16:59 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+CRITICAL - 2025-05-10 10:16:59 --> ErrorException: Undefined variable $amount
+[Method: POST, Route: payment/createVA]
+in APPPATH\Views\pages\payment_result.php on line 9.
+ 1 APPPATH\Views\pages\payment_result.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $amount', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php', 9)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\payment_result.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/payment_result', [], true)
+ 5 APPPATH\Controllers\Payment.php(75): view('pages/payment_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Payment->createVA()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Payment))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+ERROR - 2025-05-10 10:31:48 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+ERROR - 2025-05-10 10:32:33 --> Signature Error file_get_contents(C:\xampp\htdocs\Test Payment Gateway\payment-gateway\public\app/Config/private_key.pem): Failed to open stream: No such file or directory
+DEBUG - 2025-05-10 17:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-10 17:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
