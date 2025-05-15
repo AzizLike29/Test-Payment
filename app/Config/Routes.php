@@ -21,4 +21,5 @@ $routes->get('/products', 'ProductController::index');
 $routes->get('products/results', 'ProductController::getDataProduct');
 
 // winpay QRIS
+$routes->get('/winpay/response', 'WinpayQrisController::index');
 $routes->post('/api/winpay/create-qris', 'WinpayQrisController::createQris');

@@ -17,6 +17,11 @@ class WinpayQrisController extends BaseController
         $this->transactionModel = new TransactionsQris();
     }
 
+    public function index()
+    {
+        return view('pages/winpay/response');
+    }
+
     public function createQris()
     {
         try {

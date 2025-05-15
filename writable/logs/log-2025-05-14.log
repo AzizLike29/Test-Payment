@@ -29,3 +29,107 @@ INFO - 2025-05-14 07:23:57 --> Winpay API Response <html>
 </body>
 </html>
 
+CRITICAL - 2025-05-14 07:39:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "payment_result.php"
+[Method: GET, Route: api/winpay/payment_result]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('payment_result.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('payment_result', [], true)
+ 3 APPPATH\Controllers\WinpayQrisController.php(22): view('payment_result')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 07:44:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "winpay.response"
+[Method: GET, Route: api/winpay/response]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('winpay.response')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('winpay.response', [], true)
+ 3 APPPATH\Controllers\WinpayQrisController.php(22): view('winpay.response')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 07:48:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "winpay/response.php"
+[Method: GET, Route: winpay/response]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('winpay/response.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('winpay/response', [], true)
+ 3 APPPATH\Controllers\WinpayQrisController.php(22): view('winpay/response')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 07:57:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "winpay/response.php"
+[Method: GET, Route: winpay/response]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('winpay/response.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('winpay/response', [], true)
+ 3 APPPATH\Controllers\WinpayQrisController.php(22): view('winpay/response')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 08:08:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "winpay/response.php"
+[Method: GET, Route: winpay/response]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('winpay/response.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('winpay/response', [], true)
+ 3 APPPATH\Controllers\WinpayQrisController.php(22): view('winpay/response')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 08:08:40 --> ErrorException: Undefined variable $response
+[Method: GET, Route: winpay/response]
+in APPPATH\Views\pages\winpay\response.php on line 5.
+ 1 APPPATH\Views\pages\winpay\response.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\winpay\\response.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\winpay\\response.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/winpay/response', [], true)
+ 5 APPPATH\Controllers\WinpayQrisController.php(22): view('pages/winpay/response')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+CRITICAL - 2025-05-14 08:16:05 --> ErrorException: Undefined variable $response
+[Method: GET, Route: winpay/response]
+in APPPATH\Views\pages\winpay\response.php on line 5.
+ 1 APPPATH\Views\pages\winpay\response.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $response', 'C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\winpay\\response.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\app\\Views\\pages\\winpay\\response.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/winpay/response', [], true)
+ 5 APPPATH\Controllers\WinpayQrisController.php(22): view('pages/winpay/response')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WinpayQrisController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WinpayQrisController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Test Payment Gateway\\payment-gateway\\public\\index.php')
+INFO - 2025-05-14 08:16:42 --> Winpay Request Payload: {"amount":10000,"customer_name":"Abdul Aziz Firdaus","customer_email":"abdulfirdaus590@gmail.com","customer_phone":"081234567890","order_id":"INV-1747210602","channel_id":"QRIS"}
+INFO - 2025-05-14 08:16:43 --> Winpay API Response <html>
+<head><title>405 Not Allowed</title></head>
+<body>
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.20.2</center>
+</body>
+</html>
+
