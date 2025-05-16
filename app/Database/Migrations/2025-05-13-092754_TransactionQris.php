@@ -15,28 +15,59 @@ class TransactionQris extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'partner_reference_no' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '50',
+                'unique'     => true,
+            ],
             'external_id' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '255',
+                'constraint' => '50',
+                'unique'     => true,
+            ],
+            'terminal_id' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '50',
+                'null'       => true,
+            ],
+            'sub_merchant_id' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '50',
+                'null'       => true,
             ],
             'amount' => [
                 'type'       => 'DECIMAL',
-                'constraint' => '10,2',
+                'constraint' => '15,2',
+                'null'       => false,
             ],
-            'status' => [
+            'currency' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '3',
+                'null'       => false,
             ],
-            'response' => [
+            'validity_period' => [
+                'type'       => 'DATETIME',
+                'null'       => false,
+            ],
+            'is_static' => [
+                'type'       => 'BOOLEAN',
+                'null'       => false,
+            ],
+            'timestamp' => [
+                'type'       => 'DATETIME',
+                'null'       => false,
+            ],
+            'response_data' => [
                 'type' => 'TEXT',
                 'null' => true,
             ],
-            'created_at' => [
-                'type' => 'DATETIME',
-                'null' => true,
+            'status' => [
+                'type'       => 'ENUM',
+                'constraint' => ['pending', 'success', 'failed'],
+                'default'    => 'pending',
             ],
-            'updated_at' => [
-                'type' => 'DATETIME',
+            'created_at' => [
+                'type' => 'TIMESTAMP',
                 'null' => true,
             ],
         ]);

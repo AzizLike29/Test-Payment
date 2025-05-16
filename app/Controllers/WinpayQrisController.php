@@ -2,76 +2,83 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use App\Models\TransactionsQris;
 use App\Services\WinpayService;
+use App\Models\TransactionsQris;
+use App\Controllers\BaseController;
 
 class WinpayQrisController extends BaseController
 {
     protected $winpayService;
-    protected $transactionModel;
 
     public function __construct()
     {
         $this->winpayService = new WinpayService();
-        $this->transactionModel = new TransactionsQris();
-    }
-
-    public function index()
-    {
-        return view('pages/winpay/response');
     }
 
     public function createQris()
     {
         try {
-            // Generate timestamp dari external ID
-            $timestamp = date('c');
-            $externalId = 'INV-' . time();
-
-            // Siapkan payload
             $payload = [
-                'amount' => $this->request->getPost('amount') ?? 10000,
-                'customer_name' => $this->request->getPost('customer_name') ?? 'Abdul Aziz Firdaus',
-                'customer_email' => $this->request->getPost('customer_email') ?? 'abdulfirdaus590@gmail.com',
-                'customer_phone' => $this->request->getPost('customer_phone') ?? '081234567890',
-                'order_id' => $externalId,
-                'channel_id' => $this->winpayService->getChannelId()
+                'partnerReferenceNo' => 'QR-' . date('Ymd') . '-' . uniqid(),
+                'terminalId' => 'TERM GIGIH',
+                'subMerchantId' => '170041',
+                'merchantId' => env('WINPAY_MERCHANT_ID'),
+                'amount' => [
+                    'value' => 50000.00,
+                    'currency' => 'IDR'
+                ],
+                'validityPeriod' => '2025-05-17T21:30:00+07:00',
+                'additionalInfo' => [
+                    'isStatic' => false
+                ]
             ];
 
-            // debugging
-            log_message('info', 'Winpay Request Payload: ' . json_encode($payload));
-
-            // Generate signature
+            $timestamp = date('c');
+            $externalId = 'EXT-' . date('Ymd') . '-' . uniqid();
             $signature = $this->winpayService->generateSignature($timestamp, $payload);
-
-            // Kirim request ke Winpay
             $response = $this->winpayService->sendRequest($payload, $timestamp, $externalId, $signature);
 
-            // parse response ke string
-            $parsedResponse = json_decode($response, true);
+            $responseData = json_decode($response, true);
+            if (empty($responseData['data'])) {
+                log_message('warning', 'API returned null data: ' . $response);
+            }
 
-            // Simpan transaksi ke database yang sudah di buat di model transactions qris
-            $this->transactionModel->insert([
-                'external_id' => $externalId,
-                'amount' => $payload['amount'],
-                'status' => 'pending',
-                'response' => $response
-            ]);
+            $this->saveToDatabase($payload, $externalId, $timestamp, $responseData);
 
             return $this->response->setJSON([
-                'success' => true,
+                'status' => 'success',
                 'timestamp' => $timestamp,
                 'external_id' => $externalId,
-                'response' => $parsedResponse
+                'data' => $responseData
             ]);
-        } catch (\Throwable $th) {
-            // debugging
-            log_message('error', $th->getMessage());
-            return $this->response->setStatusCode(500)->setJSON([
-                'error' => true,
-                'message' => 'Internal Server Error: ' . $th->getMessage()
-            ]);
+        } catch (\Exception $e) {
+            log_message('error', 'QRIS Creation Failed: ' . $e->getMessage());
+            return $this->response->setJSON([
+                'status' => 'error',
+                'message' => $e->getMessage()
+            ], 500);
         }
+    }
+
+    protected function saveToDatabase($payload, $externalId, $timestamp, $responseData)
+    {
+        $transactionsQris = new TransactionsQris();
+
+        $data = [
+            'partner_reference_no' => $payload['partnerReferenceNo'],
+            'external_id' => $externalId,
+            'terminal_id' => $payload['terminalId'],
+            'sub_merchant_id' => $payload['subMerchantId'],
+            'amount' => $payload['amount']['value'],
+            'currency' => $payload['amount']['currency'],
+            'validity_period' => $payload['validityPeriod'],
+            'is_static' => $payload['additionalInfo']['isStatic'],
+            'timestamp' => $timestamp,
+            'response_data' => json_encode($responseData),
+            'status' => isset($responseData['status']) && $responseData['status'] === 'success' ? 'success' : 'pending'
+        ];
+
+        $transactionsQris->insert($data);
+        log_message('info', 'Transaction saved to database: ' . $payload['partnerReferenceNo']);
     }
 }
